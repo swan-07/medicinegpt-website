@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test site</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js" defer></script>
+    <header>
+        <h1>ChatGPT Medical Website</h1>
+    </header>
+
+    <div id="sidebar">
+        <h2>Assessment</h2>
+        <ul>
+            <li><span class="node"></span><a href="#basic-info">Basic Info</a>
+                <p class="grey-text">Some info to get started</p></li>
+            <li><span class="node"></span><a href="#personal-history">Personal History</a>
+                <p class="grey-text">Your health history at a glance</p></li>
+            <li><span class="node"></span><a href="#family-history">Family History</a>
+                <p class="grey-text">Your family's health history</p></li>
+            <li><span class="node"></span><a href="#summary">Summary</a>
+                <p class="blue-text">Review your data</p></li>
+        </ul>
+    </div>
+    <main>
+        <section id="chat-interface">
+            <h2 style="color: #0077b6; font-size: 30px; text-align: center; vertical-align: top;">MedicalBot</h2>            <div class="chat-container">
+                <div class="message">
+                    <div class="message-content">
+                        <p>Hello! How can I assist you today?</p>
+                    </div>
+                    <div class="message-timestamp">10:00 AM</div>
+                </div>
+                <div class="message">
+                    <div class="message-content">
+                        <p>I have a question about my medical history.</p>
+                    </div>
+                    <div class="message-timestamp">10:05 AM</div>
+                </div>
+                <!-- Add more messages here -->
+            </div>
+            <div class="user-input">
+                <input type="text" placeholder="Type your message...">
+                <button>Send</button>
+            </div>
+        </section>
+
+        <section>
+            <h1 style="color: #03254c;">Summary</h1>
+            <p class="section-grey-text">Please take a minute to review the data that you entered. You can make any changes to the information anytime by clicking the edit button on the top right of each section.</p>
+            <hr class="divider">
+        </section>
+        <section id="basic-info">
+            <h2>Basic Information</h2>
+            <p>Some info to get started</p>
+            <hr class="divider">
+            <div class="three-column"> <!-- Add the "three-column" class -->
+                <div>
+                    <h3>Personal Info</h3>
+                    <!-- Add your content for Personal Info here -->
+                </div>
+                <div>
+                    <h3>Sex at Birth</h3>
+                    <!-- Add your content for Sex at Birth here -->
+                </div>
+                <div>
+                    <h3>Ethnicity or Ancestry</h3>
+                    <!-- Add your content for Ethnicity or Ancestry here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="personal-history">
+            <h2>Personal History</h2>
+            <p>Your health history at a glance.</p>
+            <hr class="divider">
+            <div class="three-column"> <!-- Add the "three-column" class -->
+                <div>
+                    <h3>Personal Info</h3>
+                    <!-- Add your content for Personal Info here -->
+                </div>
+                <div>
+                    <h3>Sex at Birth</h3>
+                    <!-- Add your content for Sex at Birth here -->
+                </div>
+                <div>
+                    <h3>Ethnicity or Ancestry</h3>
+                    <!-- Add your content for Ethnicity or Ancestry here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="family-history">
+        </section>
+
+        <section id="summary">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Stephanie Wan, Nick Yan, Rianna Santra</p>
+    </footer>
+</body>
+</html>
